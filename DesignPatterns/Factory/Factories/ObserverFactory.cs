@@ -1,13 +1,13 @@
 ﻿using DesignPatterns.DesignPatterns;
-using DesignPatterns.DesignPatterns.Prototype;
+using DesignPatterns.DesignPatterns.Observer;
 
 namespace DesignPatterns.Factory.Factories
 {
-    class PrototypeFactory : IFactory
+    class ObserverFactory : IFactory
     {
         public IDesignPatternExecutor GetExecutor()
         {
-            return new PrototypeExecutor();
+            return new ObserverExecutor();
         }
     }
 }

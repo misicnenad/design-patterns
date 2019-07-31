@@ -5,7 +5,7 @@ namespace DesignPatterns.Factory.Factories
 {
     class SingletonFactory : IFactory
     {
-        public IDesignPatternExecutor Prepare()
+        public IDesignPatternExecutor GetExecutor()
         {
             return new SingletonExecutor();
         }

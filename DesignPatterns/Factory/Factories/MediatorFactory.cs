@@ -5,7 +5,7 @@ namespace DesignPatterns.Factory.Factories
 {
     class MediatorFactory : IFactory
     {
-        public IDesignPatternExecutor Prepare()
+        public IDesignPatternExecutor GetExecutor()
         {
             return new MediatorExecutor();
         }

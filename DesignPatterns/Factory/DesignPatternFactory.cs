@@ -19,7 +19,7 @@ namespace DesignPatterns.Factory
                 {
                     _factories.Add(Tuple.Create(
                         t.Name.Replace("Factory", string.Empty),
-                        (IFactory)Activator.CreateInstance(t)
+                        (IFactory) Activator.CreateInstance(t)
                         ));
                 }
             }
@@ -36,7 +36,7 @@ namespace DesignPatterns.Factory
                 .Where(f => f.Item1 == designPattern)
                 .SingleOrDefault()?
                 .Item2
-                .Prepare();
+                .GetExecutor();
         }
     }
 }

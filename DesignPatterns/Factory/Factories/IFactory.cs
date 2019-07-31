@@ -4,6 +4,6 @@ namespace DesignPatterns.Factory.Factories
 {
     interface IFactory
     {
-        IDesignPatternExecutor Prepare();
+        IDesignPatternExecutor GetExecutor();
     }
 }
