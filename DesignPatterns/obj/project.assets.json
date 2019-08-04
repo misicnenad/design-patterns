@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\n.misic\\.nuget\\packages\\": {},
+    "C:\\Users\\Nenad\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\n.misic\\source\\repos\\DesignPatterns\\DesignPatterns\\DesignPatterns.csproj",
+      "projectUniqueName": "D:\\Documents\\git\\design-patterns\\DesignPatterns\\DesignPatterns.csproj",
       "projectName": "DesignPatterns",
-      "projectPath": "C:\\Users\\n.misic\\source\\repos\\DesignPatterns\\DesignPatterns\\DesignPatterns.csproj",
-      "packagesPath": "C:\\Users\\n.misic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\n.misic\\source\\repos\\DesignPatterns\\DesignPatterns\\obj\\",
+      "projectPath": "D:\\Documents\\git\\design-patterns\\DesignPatterns\\DesignPatterns.csproj",
+      "packagesPath": "C:\\Users\\Nenad\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\git\\design-patterns\\DesignPatterns\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\n.misic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nenad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
