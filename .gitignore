@@ -4,8 +4,8 @@
 *.user
 _ReSharper.*/
 *.sdf
-DesignPatterns/bin/
-DesignPatterns/obj/
+bin/
+obj/
 Debug/
 Release/
 *.opensdf
