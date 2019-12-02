@@ -50,9 +50,12 @@ namespace DesignPatterns
             var designPattern = "";
             while (!int.TryParse(designPattern, out int id) || !dpTypes.ContainsKey(id))
             {
+                Console.WriteLine();
                 Console.Write("Enter design pattern ID to show: ");
                 designPattern = Console.ReadLine();
             }
+            Console.WriteLine();
+
             Console.WriteLine();
 
             return dpTypes[int.Parse(designPattern)];
