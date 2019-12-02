@@ -53,6 +53,7 @@ namespace DesignPatterns
                 Console.Write("Enter design pattern ID to show: ");
                 designPattern = Console.ReadLine();
             }
+            Console.WriteLine();
 
             return dpTypes[int.Parse(designPattern)];
         }

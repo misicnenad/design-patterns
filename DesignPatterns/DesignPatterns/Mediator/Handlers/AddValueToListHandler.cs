@@ -8,11 +8,11 @@ namespace DesignPatterns.DesignPatterns.Mediator.Handlers
 {
     class AddValueToListHandler : IRequestHandler<AddValueToList, ICollection<int>>
     {
-        public Task<ICollection<int>> Handle(AddValueToList request, CancellationToken cancellationToken = default(CancellationToken))
+        public Task<ICollection<int>> HandleAsync(AddValueToList request, CancellationToken cancellationToken = default(CancellationToken))
         {
             Console.WriteLine("AddValueToListHandler");
             Console.WriteLine($"Initial list: {string.Join(", ", request.List)}");
-            Console.WriteLine($"Adding '5' to list{Environment.NewLine}");
+            Console.WriteLine($"Adding '5' to list");
 
             var newList = new List<int>(request.List)
             {

@@ -7,13 +7,15 @@ namespace DesignPatterns.DesignPatterns.Mediator.Handlers
 {
     class DoubleValueHandler : IRequestHandler<DoubleValue, int>
     {
-        public async Task<int> Handle(DoubleValue request, CancellationToken cancellationToken = default(CancellationToken))
+        private const int _multiplier = 2;
+
+        public Task<int> HandleAsync(DoubleValue request, CancellationToken cancellationToken = default(CancellationToken))
         {
             Console.WriteLine("DoubleValueHandler");
             Console.WriteLine($"Initial value: {request.Value}");
-            Console.WriteLine($"Doubling the value{Environment.NewLine}");
+            Console.WriteLine($"Doubling the value");
 
-            return await Task.FromResult(request.Value * 2);
+            return Task.FromResult(request.Value * _multiplier);
         }
     }
 }

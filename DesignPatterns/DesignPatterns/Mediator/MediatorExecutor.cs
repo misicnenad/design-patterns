@@ -1,10 +1,10 @@
-﻿using DesignPatterns.DesignPatterns.Mediator.Requests;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using DesignPatterns.DesignPatterns.Mediator.Requests;
 
 namespace DesignPatterns.DesignPatterns.Mediator
 {
-    class MediatorExecutor : IDesignPatternExecutor
+    internal class MediatorExecutor : IDesignPatternExecutor
     {
         public void Execute()
         {
@@ -13,13 +13,12 @@ namespace DesignPatterns.DesignPatterns.Mediator
             var request2 = new AddValueToList() { List = new List<int> { 2 } };
 
             var result1 = mediator.Send(request1).GetAwaiter().GetResult();
-            var result2 = mediator.Send(request2).GetAwaiter().GetResult();
-
             Console.WriteLine($"Result1 is: {result1}");
-            foreach (var item in result2)
-            {
-                Console.WriteLine($"Result2 is: {item}");
-            }
+            Console.WriteLine();
+            Console.WriteLine();
+
+            var result2 = mediator.Send(request2).GetAwaiter().GetResult();
+            Console.WriteLine($"Result2 is: {{ {string.Join(", ", result2)} }}");
         }
     }
 }
