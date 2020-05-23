@@ -1,4 +1,4 @@
-# design-patterns
+# Design Patterns Useful Examples
 
 Examples showcasing trivial real-life uses of popular Design Patterns.
 
